@@ -1,0 +1,6 @@
+{
+  "name": "XirfadoNet Owner Dashboard",
+  "description": "Private owner and business control center for XirfadoNet: manage courses, sales, customers, income, expenses, personal and family spending, budgets, savings, mentorship, AI subscriptions, and financial analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>XirfadoNet Owner Dashboard</title>
+    <meta name="description" content="Private owner and business control center for XirfadoNet: manage courses, sales, customers, income, expenses, personal and family spending, budgets, savings, mentorship, AI subscriptions, and financial analytics." />
+    <meta property="og:title" content="XirfadoNet Owner Dashboard" />
+    <meta property="og:description" content="Private owner and business control center for XirfadoNet: manage courses, sales, customers, income, expenses, personal and family spending, budgets, savings, mentorship, AI subscriptions, and financial analytics." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="XirfadoNet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+      // Ignore Vite HMR / WebSocket disconnection errors in AI Studio iframe environment
+      window.addEventListener('unhandledrejection', function (e) {
+        var str = (e && e.reason && (e.reason.message || e.reason.stack || '')) + '';
+        if (str.includes('WebSocket') || str.includes('@vite/client') || str.includes('vite:ws')) {
+          e.preventDefault();
+        }
+      });
+      window.addEventListener('error', function (e) {
+        var str = (e && (e.message || e.filename || '')) + '';
+        if (str.includes('WebSocket') || str.includes('@vite/client') || str.includes('vite:ws')) {
+          e.preventDefault();
+        }
+      });
+    </script>
+  </head>
+  <body class="bg-slate-950 text-slate-100 antialiased selection:bg-emerald-500/30 selection:text-emerald-200">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
